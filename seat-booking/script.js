@@ -19,11 +19,11 @@ const updateCountAndPrice = () => {
   );
   const selectedMovie = movies.options[movies.selectedIndex].innerText;
 
-  localStorage.setItem(
+  sessionStorage.setItem(
     "selectedSeatsIndex",
     JSON.stringify(selectedSeatsIndex)
   );
-  localStorage.setItem("selectedMovieIndex", movies.selectedIndex);
+  sessionStorage.setItem("selectedMovieIndex", movies.selectedIndex);
 };
 function populateSeatsBasedOnMovie() {
   const occupiedSeats = [
@@ -42,8 +42,10 @@ function populateSeatsBasedOnMovie() {
 }
 
 function populateUI() {
-  storedSelectedSeats = JSON.parse(localStorage.getItem("selectedSeatsIndex"));
-  selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
+  storedSelectedSeats = JSON.parse(
+    sessionStorage.getItem("selectedSeatsIndex")
+  );
+  selectedMovieIndex = sessionStorage.getItem("selectedMovieIndex");
   seats.forEach((seat, index) => {
     if (storedSelectedSeats?.indexOf(index) > -1) {
       seat.classList.add("selected");
