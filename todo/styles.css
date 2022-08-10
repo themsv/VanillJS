@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6fcf5;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 30px 0;
+  text-align: center;
+}
+#input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  border: none;
+}
+#input-form input {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+.todo-list {
+  list-style: none;
+  width: 40%;
+  margin: 20px auto;
+}
+button {
+  background-color: #20c997;
+  border: none;
+}
+button,
+.todo-item,
+input {
+  border-radius: 6px;
+}
+.todo-item {
+  width: 100%;
+  background-color: #20c997;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 0 0 0 6px;
+}
+
+.checked {
+  text-decoration: line-through;
+  background-color: #868e96;
+}
+ion-icon {
+  font-size: 28px;
+  color: white;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+ion-icon.close {
+  background-color: red;
+}
