@@ -46,6 +46,7 @@ function populateSingleMeal(meal) {
       break;
     }
   }
+
   singleMealEl.innerHTML = `<h2>${meal.strMeal}</h2>
   <img src=${meal.strMealThumb} alt=${meal.strMeal}/>
   <div class="meal-CategoryArea">
@@ -63,6 +64,7 @@ function populateSingleMeal(meal) {
 random.addEventListener("click", async function () {
   mealsEl.innerHTML = "";
   singleMealEl.innerHTML = "";
+  searchHeading.value = "";
   const res = await fetch(`https://www.themealdb.com/api/json/v1/1/random.php`);
   const { meals } = await res.json();
   populateSingleMeal(meals[0]);
