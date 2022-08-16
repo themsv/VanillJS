@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Slider & Modal Popup</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="" alt="user image as logo" id="logo" /></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+    <header>
+      <button class="toggle" id="toggle">
+        <ion-icon name="menu-sharp"></ion-icon>
+      </button>
+      <h1>Menu Slider and Modal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias,
+        inventore!
+      </p>
+      <button class="cta-signup" id="open">Sign Up</button>
+    </header>
+    <div class="container">
+      <h2>What is this landing page about?</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        unde placeat ipsam reiciendis accusantium vitae, iure quidem vel soluta
+        corporis inventore fugiat perspiciatis nihil aperiam sed cumque ullam
+        est repellendus?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+        itaque est recusandae, voluptatibus sed aliquid tenetur aspernatur ea
+        ducimus aperiam!
+      </p>
+      <h2>Tell Me More</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+        illum voluptatem quos architecto doloremque voluptatum iure autem? Cum
+        velit eligendi provident laborum repudiandae et quis nulla, autem
+        consectetur exercitationem ipsa rerum voluptates, minima voluptate
+        maxime, nihil rem tenetur neque quae.
+      </p>
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Free Access</li>
+        <li>15 Day Money Back</li>
+        <li>1to1 mentorship</li>
+        <li>Seamless support</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, saepe
+        facere molestias quos exercitationem tempora ex accusamus in nihil quae
+        neque reiciendis eveniet ipsam, laboriosam atque culpa perspiciatis
+        voluptas sequi perferendis temporibus eligendi, eos nisi rerum?
+        Necessitatibus quos corrupti, dignissimos facere voluptas nisi cum
+        impedit optio illo consequuntur ex vel explicabo beatae adipisci dolorem
+        quidem porro fuga ipsam labore eos aliquam ut dolorum neque! Quia
+        consectetur nam velit et deserunt!
+      </p>
+    </div>
+
+    <div class="modal-signup" id="modal-signup">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+          <button class="close-btn" id="close">
+            <ion-icon name="close-sharp"></ion-icon>
+          </button>
+        </div>
+        <form action="#" autocomplete="off">
+          <p>Register with us to get offers, support and more</p>
+          <div class="form-input">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" />
+          </div>
+          <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" />
+          </div>
+          <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" />
+          </div>
+          <div class="form-input">
+            <label for="password2">Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
